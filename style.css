@@ -1,0 +1,305 @@
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#out{
+    display: flex;
+    display: grid;
+    justify-content: space-around;
+    row-gap: 20px;
+    column-gap: 15px;
+    background-color: rgb(237, 234, 234);
+    margin: auto;
+    border-radius: 5%;
+    grid-template-areas: "first second third"
+                         "fourth fifth third"
+                         "seventh seventh third";
+              
+
+}
+
+@media screen and (max-width:941px){
+    #out{
+        gap: 100px;
+    grid-template-areas: "third"
+                        "third"
+                         "third"
+                         "second"
+                          "seventh"
+                         "fourth"
+                         "fifth"
+                         "sixth"
+                         "first";
+    }
+
+}
+
+body{
+    background-color: black;
+}
+
+
+#graph{
+    background-color: white;
+    width: 25vw;
+    height: 80%;
+    border-radius: 10%;
+    padding:23px;
+}
+
+#re{
+    background-color: white;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 10%;
+}
+
+#in{
+    background-color: white;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+
+#president{
+    text-align: center;
+}
+#rw{
+    background-color: white;
+    width: auto;
+    height: auto;
+    border-radius: 10%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#name{
+    text-align: center;
+}
+
+#balloon{
+    width: 10%;
+}
+
+#clg{
+    width: 8%;
+}
+
+#location{
+    width: 10%;
+}
+
+#a{
+    background-color: white;
+    width: 25vw;
+    height: 30vh;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:25px;
+    font-weight: 600;
+    font-size: larger;
+}
+#in:hover{
+    background-color: rgb(123, 119, 119);
+}
+#a:hover{
+    background-color: rgb(123, 119, 119);
+}
+#t:hover{
+    background-color: rgb(123, 119, 119);
+}
+#aboutme:hover{
+    background-color: rgb(123, 119, 119);
+}
+#graph:hover{
+    background-color: rgb(123, 119, 119);
+}
+#profile:hover{
+    background-color: rgb(123, 119, 119);
+}
+#a:hover{
+    background-color: rgb(123, 119, 119);
+}
+#re:hover{
+    background-color: rgb(123, 119, 119);
+}
+#rw:hover{
+    background-color: rgb(123, 119, 119);
+}
+
+ul{
+    /* padding: 30%; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: larger;
+    
+}
+
+#pp{
+    height: 35%;
+    margin-top: 70%;
+    margin-left: 22%;
+}
+
+#t{
+    background-color: white;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 10%;
+    padding:25px;
+}
+
+#profile{
+    height: 40%;
+}
+
+#add{
+
+}
+
+#info{
+    height: 30%;
+}
+
+#email{
+    height: 10%;
+}
+
+#bar1{
+    height:1vh;
+    width: 80%;
+    background-color: rgb(151, 165, 42);
+    border-radius: 10%;
+    animation: fill1 2s  0.5s 1 ease;
+}
+
+#bar2{
+    height:1vh;
+    width: 70%;
+    background-color: rgb(165, 42, 42);
+    border-radius: 10%;
+    animation: fill2 2s  0.5s 1 ease;
+}
+
+#bar3{
+    height:1vh;
+    width: 40%;
+    background-color: rgb(42, 165, 140);
+    border-radius: 10%;
+    animation: fill3 2s  0.5s 1 ease;
+}
+
+
+#bar4{
+    height:1vh;
+    width: 60%;
+    background-color: blue;
+    border-radius: 10%;
+    animation: fill4 2s  0.5s 1 ease;
+}
+
+@keyframes fill1 {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:80%;
+    }
+    
+}
+@keyframes fill2 {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:70%;
+    }
+    
+}
+@keyframes fill3 {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:40%;
+    }
+    
+}
+@keyframes fill4 {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:60%;
+    }
+    
+}
+
+#skill{
+    display: flex;
+    align-items: center;
+    grid-area: first;
+}
+
+#interest{
+    grid-area: second;
+    
+}
+
+#headSkill{
+    text-align: center;
+}
+
+#aboutme{
+    padding: 10% 10% 10% 10%;
+    width: 30vh;
+    background-color: white;
+    grid-area: third;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#email{
+    background-color: rgb(7, 7, 117);
+    color: white;
+    padding: 7%;
+}
+
+#sgraph{
+    width: 75%;
+    height: 75%;
+    border: none;
+    margin-top: 10%;
+    margin-right: 40%;
+}
+
+#info{
+
+}
+
+#achieve{
+    grid-area: fifth;
+}
+
+#reach{
+    grid-area: sixth;
+}
+
+#rewards{
+    grid-area: seventh;
+}
