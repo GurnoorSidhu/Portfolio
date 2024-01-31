@@ -26,6 +26,7 @@ body{
     background-color: white;
     cursor: pointer;
     font-family: 'Lemonada', cursive;
+    font-size:larger;
 }
 
 #search{
